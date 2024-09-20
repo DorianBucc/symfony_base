@@ -1,0 +1,20 @@
+{% extends 'base.html.twig' %}
+{% block style %}
+	body{
+	            background-image: url("https://www.shutterstock.com/image-photo/composition-cup-caffe-latte-260nw-1613232235.jpg");
+	            background-size: 100%;
+	            color:white;
+	    }
+{% endblock %}
+{% block titre %}
+	Liste des burgers
+{% endblock %}
+{% block content %}
+	<nav>
+		<a href="{{ path('home')}}">Home</a>
+	</nav>
+	<ul>
+		<li><ahref="{{ path('burgers',{'id':1}) }}">Classic</a></li>
+		<li><ahref="{{ path('burgers',{'id':2}) }}">Whooper</a></li>
+	</ul>
+{% endblock %}
